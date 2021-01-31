@@ -29,10 +29,10 @@ namespace HW_1_28_01_21
             Arr = Arr.Where((item, index) => index != IndexRemoteElement).ToArray();
             return RemoteElement;
         }
-        public static Decimal Pop(ref Decimal[] Arr)
+        public static decimal Pop(ref decimal[] Arr)
         {
             int IndexRemoteElement = Arr.Length - 1;
-            Decimal RemoteElement = Arr[IndexRemoteElement];
+            decimal RemoteElement = Arr[IndexRemoteElement];
             Arr = Arr.Where((item, index) => index != IndexRemoteElement).ToArray();
             return RemoteElement;
         }
